@@ -25,7 +25,16 @@ function App() {
   
   return (
     <div className="App">
-      <TodoForm />
+      <TodoForm onAdd={(text) => {
+        setTodos([
+          ...todos,
+          {
+            id: Math.random(),
+            text: text,
+            isCompleted: false
+          }
+        ]);
+      }}/>
       <TodoList todos={todos}/>
       <TodoFooter />
     </div>
