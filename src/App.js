@@ -1,4 +1,5 @@
 import  {useState} from 'react';
+import TodoList from './TodoList';
 
 function App() {
 
@@ -15,14 +16,14 @@ function App() {
     },
     {
       id: Math.random(),
-      text: "Learn React",
+      text: "Learn React", 
       isCompleted: false
     }
   ]);
   
   return (
     <div className="App">
-
+      <TodoList todos={todos}/>
     </div>
   );
 }
