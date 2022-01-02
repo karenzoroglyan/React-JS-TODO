@@ -1,4 +1,5 @@
 import  {useState} from 'react';
+import TodoFooter from './TodoFooter';
 import TodoForm from './TodoForm';
 import TodoList from './TodoList';
 
@@ -26,6 +27,7 @@ function App() {
     <div className="App">
       <TodoForm />
       <TodoList todos={todos}/>
+      <TodoFooter />
     </div>
   );
 }
