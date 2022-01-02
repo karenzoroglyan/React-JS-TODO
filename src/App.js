@@ -1,4 +1,5 @@
 import  {useState} from 'react';
+import TodoForm from './TodoForm';
 import TodoList from './TodoList';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   
   return (
     <div className="App">
+      <TodoForm />
       <TodoList todos={todos}/>
     </div>
   );
